@@ -13,7 +13,7 @@ public class Calculator11 extends AppCompatActivity {
     EditText edit;
     Button one,two,three,four,five,six,seven,eight,nine,zero,add,sub,multiply,divide,clear,dot,equal;
 
-    float valueone,valuetwo;
+    float valueone,valueto;
 
     boolean madd,msub,mmul,mdiv;
 
@@ -197,19 +197,19 @@ public class Calculator11 extends AppCompatActivity {
                 valuetwo=Float.parseFloat(edit.getText()+"");
 
                 if(madd==true){
-                    edit.setText(valueone + valuetwo+"");
+                    edit.setText(valueone + valueto+"");
                     madd=false;
                 }
                 if(msub==true){
-                    edit.setText(valueone - valuetwo+"");
+                    edit.setText(valueone - valueto+"");
                     msub=false;
                 }
                 if(mmul==true){
-                    edit.setText(valueone * valuetwo+"");
+                    edit.setText(valueone * valueto+"");
                     mmul=false;
                 }
                 if(mdiv ==true){
-                    edit.setText(valueone / valuetwo+"");
+                    edit.setText(valueone / valueto+"");
                     mdiv=false;
                 }
 
